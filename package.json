@@ -1,0 +1,32 @@
+{
+  "name": "compo-react",
+  "version": "1.0.0",
+  "description": "CLI to create components and containers for a React app",
+  "bin": {
+    "compo-react": "./dist/src/index.js"
+  },
+  "repository": "https://github.com/c3s4/compo-react.git",
+  "author": "Davide Cesaroni <davide.cesaroni@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "watch": "tsc -w",
+    "build": "tsc",
+    "lint": "eslint --ext .ts --ext .js src tests",
+    "inst": "npm run build && npm link"
+  },
+  "dependencies": {
+    "eslint-plugin-prettier": "^3.1.4",
+    "handlebars": "^4.7.6",
+    "typescript": "^4.1.2",
+    "yargs": "^16.1.1"
+  },
+  "devDependencies": {
+    "@types/yargs": "^15.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "prettier": "^2.2.0"
+  }
+}
